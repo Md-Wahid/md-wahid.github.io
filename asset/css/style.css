@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    padding: 0px 200px;
+}
+
+
+/*------------ LOGO SECTION ---------------*/
+.logo-section{}
+.logo-section img{
+    display: block;
+    margin: auto;
+}
+
+
+
+/*------------ MAIN MENU SECITON ------------*/
+.main-menu{}
+.main-menu>ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.main-menu>ul>li{}
+.main-menu>ul>li>a{
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+.main-menu>ul>li>a:hover{}
+
+
+/*----------- BANNER SECITON ---------------*/
+.banner-section{}
+.banner-section img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/*---------- BLOG SECTION -------------*/
+.blog-section{
+    padding: 50px 0px;
+}
+.blog-section .blog-title{}
+.blog-section .blog-title h1{
+    text-align: center;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+
+.blog-section .blog-content{
+    display: flex;
+}
+.blog-section .blog-content .blog-description{
+    margin-right: 15px;
+    text-align: justify;
+    width: 50%;
+}
+.blog-section .blog-content .blog-description p{}
+
+.blog-section .blog-content .blog-image{
+    margin-left: 15px;
+    width: 50%;
+}
+.blog-section .blog-content .blog-image img{}
+.blog-section .blog-content .blog-image img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
