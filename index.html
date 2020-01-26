@@ -1,3 +1,21 @@
+<?php
+session_start();
+if(isset($_SESSION['uname']) && isset($_SESSION['upass'])){
+    if($_SESSION['uname'] != 'user'){
+        echo 'Error: Wrong user name';
+        header('location: login.html');
+    }
+    else if($_SESSION['upass'] != 'user'){
+        echo 'Error: Wrong user password';
+        header('location: login.html');
+    }
+}
+else{
+    header('location: login.html');
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,7 +47,7 @@
                 <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#gallary"><i class="far fa-images"></i> Gallery</a></li>
-                <li><a href="#services">Services</a>
+                <li><a href="#services">Our Services</a>
                     <ul>
                         <li><a href="#services/web-design">Web Design</a></li>
                         <li><a href="#services/mobile-application">Mobile Application</a></li>
@@ -38,9 +56,12 @@
                         <li><a href="#services/graphic-design">Graphic Design</a></li>
                     </ul>
                 </li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#portfolio">Our Portfolio</a></li>
                 <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
-                <li><a href="#contact"><i class="far fa-address-card"></i> Contact</a></li>
+                <li><a href="#contact"><i class="far fa-address-card"></i> Contact Us</a></li>
+                <li>
+                   <a href="./logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </li>
             </ul>
         </div>
         
@@ -85,3 +106,5 @@
 </body>
 
 </html>
+
+

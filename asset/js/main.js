@@ -31,11 +31,6 @@ $(document).ready(function(){
         $(this).addClass("active"); 
         $(this).parent().siblings().children().removeClass("active");
     });
-    $(".main-menu ul li ul li a").click(function(){
-        //$(".main-menu ul li a").removeClass("active");
-        $(this).parent().parent().parent().("a").addClass("active"); 
-        $(this).parent().parent().parent().siblings().children().removeClass("active");
-    });
     
     
     
