@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product & News - Product & News</title>
+    <link rel="stylesheet" href="./wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./wwwroot/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="./wwwroot/WebApp.styles.css" asp-append-version="true" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-sm navbar-toggleable-sm navbar-dark bg-primary border-bottom box-shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">WebApp</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-white active" asp-area="" asp-controller="Home" asp-action="Index" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy" href="privacy.html">Privacy</a>
+                        </li>
+                    </ul>
+                    <!-- <partial name="_LoginPartial" /> -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="Identity" asp-page="/Account/Register" href="/register.html">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="Identity" asp-page="/Account/Login" href="/login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="heroImage" class="carousel carousel-dark slide mb-3" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroImage" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroImage" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroImage" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#heroImage" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#heroImage" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                <img src="https://www.startech.com.bd/image/cache/catalog/home/banner/express-delivery-girl-receiving-parcel-home-banner-982x500.webp" class="d-block w-100" alt="Slide 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                <img src="https://www.startech.com.bd/image/cache/catalog/home/banner/Uttara%20Sayed%20Grand%20Notice-982x500.png" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.startech.com.bd/image/cache/catalog/home/banner/gadget-fest/Gadget-Fest-Live-Now-Home-Banner~1-982x500.webp" class="d-block w-100" alt="Slide 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.ryanscomputers.com/storage/sliders/HP-BUndle-web-banner_1698063398.webp" class="d-block w-100" alt="Slide 4">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Fourth slide label</h5>
+                        <p>Some representative placeholder content for the fourth slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.ryanscomputers.com/storage/sliders/Home-Delivery-main-Slider_1698570946.webp" class="d-block w-100" alt="Slide 5">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Fifth slide label</h5>
+                        <p>Some representative placeholder content for the fifth slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroImage" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroImage" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    <!-- <div class="container"> -->
+        <main role="main" class="pb-3">
+            <!-- About Area -->
+            <section id="about-area" class="about-area py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-12 wow fadeInLeft" data-wow-duration="1s">
+                            <!-- About Content -->
+                            <div class="about-content">
+                                <span class="head-title">Who We Are</span>
+                                <h2>We are <span>selling products</span> successfully for last 2 yearS.</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ut consequuntur a cum adipisci doloremque veniam commodi perspiciatis veritatis quas. Nulla voluptatum nemo a repellendus quisquam porro? Consequatur praesentium vitae maxime, nostrum voluptatum illo ad, doloremque iure aut repellat minima non velit itaque soluta excepturi voluptas! Ab alias modi aut quidem corporis voluptatem eveniet fugiat architecto eius rem tenetur corrupti officiis eaque sint error vel quae, natus eum! Accusantium accusamus labore optio quos dolorem numquam explicabo eum, aspernatur veritatis, cupiditate incidunt temporibus laboriosam omnis autem! Accusantium odio a commodi provident hic aperiam consequatur nemo, fuga id mollitia, illum earum. Iste.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12 wow fadeInRight" data-wow-duration="1.5s">
+                            <!-- About Image -->
+                            <div class="about-img">
+                                <img src="https://www.ryanscomputers.com/storage/right_side/Corsair-HS70_Right-Slide_1698208088.webp" alt="about image">
+                                <!-- <img src="./wwwroot/img/about-img.svg" alt="about image"> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="our-product py-5">
+                <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12">
+                        <div class="section-title">
+                            <h3>Featured Product</h3>
+                            <p>Click & See More Information About Your Desired Product!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card product-item" style="width: 18rem;">
+                            <img src="./wwwroot/img/product/iphone-15-pro-max-blue-titanium-1-200x200.webp" class="card-img-top" alt="iPhonee 15 Pro Max">
+                            <div class="card-body">
+                                <h5 class="card-title product-title">iPhone 15 Pro Max 512GB Blue Titanium (Singapore)</h5>
+                                <p class="card-text product-short-description">The iPhone 15 Pro Max features a 6.7-inch Super Retina XDR display with all-screen OLED technology. It has a resolution of 2796‑by‑1290-pixel resolution at 460 ppi and ProMotion technology with adjustable refresh rates that can exceed 120Hz. The display has a usual maximum brightness of 1,000 nits, a peak HDR brightness of 1,600 nits, and an amazing peak brightness of 2,000 nits for outdoor use. Dynamic Island, Always-On display, True Tone technology, broad color (P3) support, Haptic Touch, a phenomenal 20,00,000:1 contrast ratio (typical), and a fingerprint-resistant oleophobic coating are among the features. It also allows for the display of various languages and characters at the same time. USB 3 and Wi-Fi 6E connection for quicker data transmission and wireless speeds.</p>
+                            </div>
+                            <ul class="list-group list-group-flush product-info">
+                                <li class="list-group-item"><strong>Display:</strong> 6.7" Super Retina XDR Always-On display</li>
+                                <li class="list-group-item"><strong>Processor:</strong> A17 Pro chip, <strong>Storage:</strong> 512GB</li>
+                                <li class="list-group-item product-price"><strong>Price:</strong> 227,000৳&nbsp;&nbsp;&nbsp;<strike class="original-amount">245,300৳</strike></li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="btn btn-primary">See More</a>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card product-item" style="width: 18rem;">
+                            <img src="./wwwroot/img/product/x5-pro-5g-black-200x200.webp" class="card-img-top" alt="x5 Pro">
+                            <div class="card-body">
+                                <h5 class="card-title product-title">POCO X5 Pro 5G Smartphone (8/256GB)</h5>
+                                <p class="card-text product-short-description">The POCO X5 Pro 5G is equipped with a Snapdragon 778G chipset. It offers exceptional performance and 5G connectivity. The 6.67" Flow AMOLED DotDisplay showcases vibrant visuals, featuring 900 nits peak brightness, a 120Hz refresh rate, and 240Hz touch sampling rate. It comes with 8GB of LPDDR4X RAM and it can be expanded up to 13GB thanks to the Dynamic RAM expansion 3.0 Technology. The phone is equipped with 256GB of UFS 2.2 storage. The POCO X5 Pro 5G has flagship camera system, including a 108MP main camera with pixel-binning technology, an 8MP ultra-wide angle camera, and a 2MP macro camera, ensures superior imaging capabilities. The smartphone is powered by a 5000mAh battery with 67W turbo charging for extended usage. The mobile phone features advanced dimming technology and supports Dolby Vision and Dolby Atmos for an immersive audio-visual experience. The POCO X5 Pro 5G offers a comfortable and lightweight experience for extended gaming sessions. The side fingerprint unlock feature enhances usability and accelerates unlocking..</p>
+                            </div>
+                            <ul class="list-group list-group-flush product-info">
+                                <li class="list-group-item"><strong>Display:</strong> 6.67" FHD+ Flow AMOLED DotDisplay with 120Hz Refresh Rate</li>
+                                <li class="list-group-item"><strong>Processor:</strong> Qualcomm SM7325 Snapdragon 778G 5G (6 nm)</li>
+                                <li class="list-group-item product-price"><strong>Price:</strong> 34,300৳&nbsp;&nbsp;&nbsp;<strike class="original-amount">38,000৳</strike></li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="btn btn-primary">See More</a>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card product-item" style="width: 18rem;">
+                            <img src="./wwwroot/img/product/vostro-14-3400-black-side-228x228.jpg" class="card-img-top" alt="Dell Vostro 14 3400">
+                            <div class="card-body">
+                                <h5 class="card-title product-title">Dell Vostro 14 3400 Core i3 11th Gen 14" HD Laptop</h5>
+                                <p class="card-text product-short-description">Dell Vostro 14 3400 Laptop comes with the Intel Core i3-1115G4 Processor (6MB Cache, 3.0 GHz up to 4.10 GHz) and 4GB DDR4 2666MHz RAM. It has a 1TB 5400 rpm 2.5" SATA Hard Drive. It is featured Intel UHD Graphics. It has a 14.0-inch HD (1366 x 768), 60 Hz, Anti-glare, NTSC 45%, 220 Nits, LED Backlight Non-touch Narrow Border Display. It features built-in 802.11ac 1x1 WiFi and Bluetooth. It comes with 1x USB 2.0, 1x HDMI 1.4, 1x Ethernet RJ-45, 2x USB 3.2 Gen 1 Type-A, 1x Headset Jack, 1x Power In ports, and 1x 3-in-1 SD Media Card Reader, 1x Wedge-Shaped Lock Slot. It is powered by 3-Cell, 42 WHr, Integrated battery. Dell Vostro 14 3400 Core i3 Laptop has 2 years warranty (battery adapter 1 year).</p>
+                            </div>
+                            <ul class="list-group list-group-flush product-info">
+                                <li class="list-group-item"><strong>Display:</strong> 14.0-inch HD (1366 x 768)</li>
+                                <li class="list-group-item"><strong>RAM:</strong> 4GB DDR4, <strong>Storage:</strong> 1TB SATA HDD</li>
+                                <li class="list-group-item product-price"><strong>Price:</strong> 48,500৳&nbsp;&nbsp;&nbsp;<strike class="original-amount">49,500৳</strike></li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="btn btn-primary">See More</a>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card add-card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Sample adds</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic exercitationem ut magni molestias impedit, a fuga laborum, omnis assumenda sunt sit aliquam voluptatibus quos veniam sequi non mollitia iste. Quas assumenda mollitia, vel error accusantium ratione odit? Pariatur ut nemo minus aliquam ad! Magni inventore deleniti a ipsa blanditiis, nihil quisquam quibusdam esse veniam, consequatur mollitia exercitationem quaerat, cumque incidunt consectetur alias dolorem neque laborum vel quidem quae eum ea animi. Praesentium, iure ea! Accusamus illum nostrum fugit eius sequi perspiciatis quam cupiditate quis eum. Quod odit corrupti voluptatum laudantium culpa excepturi sint. Cum voluptas, rem nulla commodi consequatur similique.</p>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <!-- @RenderBody() -->
+        </main>
+    <!-- </div> -->
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - WebApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="./wwwroot/lib/jquery/dist/jquery.min.js"></script>
+    <script src="./wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./wwwroot/js/site.js" asp-append-version="true"></script>
+
+    <!-- Owl Caresoul 1 -->
+
+    <!-- @await RenderSectionAsync("Scripts", required: false) -->
+    <script>
+        // navbar settings
+        var currentPath = window.location.pathname;
+        $('.navbar-nav .nav-link.active').removeClass('active');
+
+        $('.navbar-nav .nav-link').each(function(i,d) {
+            // var area = $(d).attr('asp-area');
+            // var cont = $(d).attr('asp-controller');
+            // var act = $(d).attr('asp-action');
+            // $(d).attr('href', '/'+area+'/'+cont+'/'+act)
+
+
+            var linkPath = $(d).attr('href');
+            // var text = $(d).text();
+            // console.log(i+ 'text: ' +text+ ' url: ' +linkPath); 
+            if(currentPath == linkPath){
+                $(d).addClass('active');
+            }
+        });
+
+
+        // Carousel
+        $(document).ready(function() {
+            var heroImage = document.getElementById('heroImage')
+
+            heroImage.addEventListener('slide.bs.carousel', function (e) {
+                // console.log(e);
+                heroImage.trigger('data-bs-interval', [3000])
+            })
+
+            // $('.play').on('click', function() {
+            //     owl.trigger('play.owl.autoplay', [1000])
+            // })
+            // $('.carousel-control-next').on('click', function() {
+            //     if(e.to == 4){
+            //         heroImage.trigger('data-bs-to', [0])
+            //         heroImage.trigger('data-bs-from', [4])
+            //     }
+                
+            // })
+        })
+
+    </script>
+</body>
+</html>

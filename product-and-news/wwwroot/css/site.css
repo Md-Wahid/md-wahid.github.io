@@ -1,0 +1,94 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.navbar-nav .nav-item .active{
+  font-weight: 700;
+}
+
+#heroImage{
+  top: 3.5rem;
+}
+#heroImage .carousel-item img{
+  height: 400px;
+  width: 1170px;
+}
+
+/*=============================
+	About Area
+===============================*/
+.about-area {
+  padding-bottom:100px;
+}
+.about-content{}
+.about-content .head-title {
+  display: block;
+  margin-bottom: 10px;
+}
+.about-content h2 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 0.2px;
+  color: #213044;
+  margin-bottom: 30px;
+overflow:hidden;
+}
+.about-content h2 span {
+  color: #3464E0;
+}
+.about-content p{}
+
+
+.product-item .product-info{
+  height: 10.7rem;
+}
+.product-item .product-info li:not(.product-price){
+  height: 5.5rem;
+}
+.product-item .product-info .product-price{
+  color: #3464E0;
+}
+.product-item .product-info .product-price .original-amount{
+  color: #213044;
+  font-size: 0.7rem;
+}
+
+.product-item .product-short-description{
+  height: 5.8rem;
+  overflow: hidden;
+}
+
+.add-card{
+  height: 44.3rem;
+  overflow: auto;
+}
+
+.our-product{
+  background-color: #F3F6FF;
+}
+.section-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
