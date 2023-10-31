@@ -1,0 +1,110 @@
+<?php
+session_start();
+if(isset($_SESSION['uname']) && isset($_SESSION['upass'])){
+    if($_SESSION['uname'] != 'user'){
+        echo 'Error: Wrong user name';
+        header('location: login.html');
+    }
+    else if($_SESSION['upass'] != 'user'){
+        echo 'Error: Wrong user password';
+        header('location: login.html');
+    }
+}
+else{
+    header('location: login.html');
+}
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Wahid | Home</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/responsive.css">
+    <link rel="icon" href="./asset/images/mw.png">
+</head>
+
+<body>
+    <div class="wrapper">
+       
+       
+        <div class="logo-section">
+            <img src="asset/images/logo.png" alt="">
+        </div>
+        
+        
+        
+        
+        
+        <div class="main-menu">
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallary"><i class="far fa-images"></i> Gallery</a></li>
+                <li><a href="#services">Our Services</a>
+                    <ul>
+                        <li><a href="#services/web-design">Web Design</a></li>
+                        <li><a href="#services/mobile-application">Mobile Application</a></li>
+                        <li><a href="#services/domain-hosting">Domain Hosting</a></li>
+                        <li><a href="#services/digital-marketing">Digital Marketing</a></li>
+                        <li><a href="#services/graphic-design">Graphic Design</a></li>
+                    </ul>
+                </li>
+                <li><a href="#portfolio">Our Portfolio</a></li>
+                <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="#contact"><i class="far fa-address-card"></i> Contact Us</a></li>
+                <li>
+                   <a href="./logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </li>
+            </ul>
+        </div>
+        
+        
+        
+        
+        
+        <div class="banner-section">
+            <img src="asset/images/banner.jpg" alt="">
+        </div>
+        
+        
+        
+        
+        
+        <div class="blog-section">
+           
+            <div class="blog-title">
+                <h1>Blog</h1>
+            </div>
+                
+                
+            <div class="blog-content">
+                <div class="blog-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus evenieudiandae explicabo perferendis, voluptas odit aliquid nulla raimus eius non, nesciunt et rerum quasi blanditiis odit numquam! Neque ipsum earum nostrum quidem placeat tempora, incidunt quisquam eos. Minus vero culpa earum, voluptate  quas quae optio est delectus? Accusamus doloribus dignissimos, temporibus tempora explicabo, esse soluta. Blanditiis soluta eumesentium quis doloribus omnis dicta numquam cumque, tempore! Excepturi fugit fugiat ratione, quos quo voluptatibus. Demo</p>
+                </div>
+                
+                <div class="blog-image">
+                    <img src="asset/images/blog.jpg" alt="">                
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        
+    
+    </div>
+    
+    <script src="asset/js/jquery-3.3.1.min.js"></script>  
+   <script src="asset/js/main.js"></script>
+</body>
+
+</html>
+
+
